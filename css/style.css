@@ -185,13 +185,14 @@ input {
   color: #555555;
   font-weight: 400;
   font-size: 14px;
-}
-
-.menu__link--active {
-  color: #5363db;
   position: relative;
 }
-.menu__link--active:after {
+
+.menu__list li:hover a {
+  color: #5363db;
+ 
+}
+.menu__list li:hover a:after {
   display: block;
   content: " ";
   position: absolute;
@@ -313,10 +314,12 @@ input {
   overflow: hidden;
 }
 
-.selected-item {
-  position: relative;
+
+.item-yoga__image {
+  flex: 0 0 48%;
+  min-height: 100%;
 }
-.selected-item:before {
+.item-yoga__image:hover:before {
   content: "";
   display: block;
   width: 100%;
@@ -324,11 +327,6 @@ input {
   left: 0;
   top: 0;
   background-color: rgba(74, 90, 210, 0.55);
-}
-
-.item-yoga__image {
-  flex: 0 0 48%;
-  min-height: 100%;
 }
 .item-yoga__image img {
   min-width: 100%;
@@ -414,6 +412,8 @@ input {
   padding: 236px 0 203px 0;
   position: relative;
   z-index: 3;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .inform__subtitle {
